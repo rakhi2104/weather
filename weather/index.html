@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main-style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,800" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+      <div class="mdl-grid">
+
+        <div class="mdl-cell mdl-cell--2-col mdl-layout-spacer"></div>
+
+        <div class="main-card mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--8-col mdl-shadow--6dp">
+
+            <!-- LEFT HALF -->
+            <div class="card-left mdl-cell mdl-cell--5-col">
+
+              <div class="temp">
+
+                <div class="top-text row">
+                  <h4 id="date">June 12, 2017</h4>
+                </div>
+
+                <div class="sun row">
+                  <h5> <span> <i class="sun wi wi-sunrise" title="Sunrise Time"></i> </span> <span id="sunrise-time">06:20 AM</span>  <span> <i class="sun wi wi-sunset" title="Sunset Time"></i> </span> <span id="sunset-time">06:20 PM</span> </h5>
+                </div>
+
+                <div class="mdl-layout-spacer"></div>
+
+                <div class="bottom-text row">
+                  <h1 id="tempDigit">24°­ </h1>
+                  <h3 id="place"> Vatican City</h3>
+                  <h4 id="current-status">Sunny</h4>
+                  <h2>·····</h2>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- RIGHT HALF -->
+            <div class="card-right mdl-cell mdl-cell--7-col">
+              <div class="right-content container-fluid">
+                <div class="mdl-tabs mdl-js-tabs ">
+
+                  <div class="mdl-tabs__tab-bar  ">
+                      <a href="#stats-panel-main" class="mdl-tabs__tab is-active">Statistics</a>
+                  </div>
+
+                  <div class="mdl-tabs__panel is-active" id="stats-panel-main">
+                    <ul class="list-inline horizontal-items text-center">
+                      <li class="col-sm-3">
+                        <div class="row">
+                          <i class="wi wi-raindrops" title="Precipitation"></i>
+                        </div>
+                        <div id="precip" class="row">
+                          35 %
+                        </div>
+                      </li>
+                      <li class="col-sm-3">
+                        <div class="row">
+                          <i class="wi wi-direction-up" title="Wind Direction"></i>
+                        </div>
+                        <div id="wind-dir" class="row">
+                          Easterly
+                        </div>
+                      </li>
+                      <li class="col-sm-3">
+                        <div class="row">
+                          <i class="wi wi-strong-wind" title="Wind Strength"></i>
+                        </div>
+                        <div id="wind-speed" class="row">
+                          27 km/h
+                        </div>
+                      </li>
+                      <li class="col-sm-3">
+                        <div class="row">
+                          <i class="wi wi-cloud" title="Cloud Cover"></i>
+                        </div>
+                        <div id="cloud-cover" class="row">
+                          17 %
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="right-content container-fluid">
+                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+
+                  <div class="mdl-tabs__tab-bar  ">
+                      <a href="#today-panel-main" class="mdl-tabs__tab is-active">Today</a>
+                      <a href="#weekly-panel-main" class="mdl-tabs__tab ">Weekly</a>
+                      <a href="#monthly-panel-main" class="mdl-tabs__tab ">Monthly</a>
+                  </div>
+
+                  <div class="mdl-tabs__panel is-active" id="today-panel-main">
+                    <ul class="text-center">
+                      <li class="today-time col-sm-4">
+                          01 : 00 pm
+                      </li>
+                      <li class="today-summary col-sm-4">
+                          Sunny
+                      </li>
+                      <li class="today-temp col-sm-4">
+                          24°C
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                  <!--  <li class="col-sm-3">
+                        18°C <span><i class="material-icons">arrow_downward</i></span>
+                    </li> -->
+
+                  <div class="mdl-tabs__panel " id="weekly-panel-main">
+                    <ul class="text-center">
+                      <li class="col-sm-3">
+                          35 %
+                      </li>
+                      <li class="col-sm-3">
+                          17 %
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="mdl-tabs__panel " id="monthly-panel-main">
+                    <ul class="text-center">
+                      <li class="col-sm-3">
+                          27 km/h
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="mdl-cell mdl-cell--2-col mdl-layout-spacer"></div>
+
+      </div>
+
+    </div>
+<footer class="text-center"> <a href="https://darksky.net/poweredby/" target="_blank"> Powered by DarkSky </a></footer>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+:root {
+  --color-start : #f3518d;
+  --color-end : #ff9a44;
+  --color-font : #fff;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  font-weight: 800;
+}
+
+i.material-icons {
+  font-size: 16px;
+  vertical-align: middle !important;
+}
+
+.mdl-card.mdl-shadow--2dp {
+  width: 100%;
+}
+
+.main-card {
+  height: 768px;
+  border-radius: 12px ;
+}
+
+.card-left {
+  background-image: linear-gradient(135deg, var(--color-start) 0%, var(--color-end) 95%);
+  border-top-left-radius: 12px ;
+  border-bottom-left-radius: 12px ;
+}
+
+.mdl-tabs__tab-bar {
+  float: none;
+  border-bottom: 2px solid #f0f0f0 !important;
+}
+
+.temp {
+  color: white;
+  padding: 64px;
+  height: 100%;
+  position: relative;
+}
+
+.top-text >h5 {
+  font-weight: 300;
+}
+
+.bottom-text {
+  bottom: 0;
+  position: absolute;
+  width: 80%;
+  overflow: auto;
+}
+
+.bottom-text >h4 {
+  font-weight: 300;
+  margin: auto;
+  font-size: 24px;
+}
+.bottom-text >h3 {
+  font-weight: 300;
+  margin: auto;
+}
+.bottom-text >h1 {
+  font-weight: 100;
+  margin: auto;
+  font-size: 12rem;
+}
+
+.right-content {
+  padding: 32px;
+  width: 85%;
+}
+
+.horizontal-items {
+  width: 100%;
+}
+
+.horizontal-items > li {
+  transition: all 1s cubic-bezier(.4,0,1,1);
+}
+
+.wi {
+  font-size: 72px;
+  background-image: linear-gradient(135deg, var(--color-start) 0%, var(--color-end) 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sun {
+  font-size: 24px;
+  color: white;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.sun > h5 {
+  font-weight: 300;
+}
+
+.material-icons {
+  padding-right: 4px;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  height: 4px !important;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--color-start) 0%, var(--color-end) 95%) !important;
+}
+
+.today-temp {
+  color: var(--color-end);
+  font-size: 24px;
+  padding: 12px;
+}
+
+.today-summary {
+  font-size: 16px;
+  padding: 12px;
+  text-align: right;
+}
+
+.today-time {
+  font-size: 16px;
+  text-align: left;
+  padding: 12px;
+}

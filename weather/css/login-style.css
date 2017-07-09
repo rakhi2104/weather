@@ -1,0 +1,58 @@
+:root {
+  --color-start : #f3518d;
+  --color-end : #ff9a44;
+  --color-font : #fff;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #F5F6F9 ;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.mdl-card.mdl-shadow--2dp {
+  width: 100%;
+}
+
+.main-card {
+  height: 768px;
+  border-radius: 4px ;
+  background-color: #fff;
+}
+
+.card-left {
+  /*background-image: linear-gradient(135deg, var(--color-start) 0%, var(--color-end) 95%);*/
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.card-right-content {
+  width: 50%;
+  height: 55%;
+  margin-top: 128px;
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center;
+  float: none;
+}
+
+#signIn-panel-main {
+  margin-top: 24px;
+}
+#signUp-panel-main {
+  margin-top: 24px;
+}
+
+#alt-sso {
+
+}
+
+.form-boxes {
+
+  width: 100%;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="640350664488-uktjj3qd034t8c2fpn9pi5m2u486u2lf.apps.googleusercontent.com">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/login-style.css">
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAO7cm-0rjVrku070AeFsdbdR6R5hOM9Sg",
+    authDomain: "marcus-4233c.firebaseapp.com",
+    databaseURL: "https://marcus-4233c.firebaseio.com",
+    projectId: "marcus-4233c",
+    storageBucket: "marcus-4233c.appspot.com",
+    messagingSenderId: "640350664488"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase-database.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,800" rel="stylesheet">
+    <script type="text/javascript" src="js/login.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="mdl-grid">
+
+        <div class="mdl-cell mdl-cell--2-col mdl-layout-spacer"></div>
+
+        <div class="main-card mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--8-col mdl-shadow--6dp">
+
+            <!-- LEFT HALF -->
+            <div class="card-margin mdl-cell mdl-cell--1-col">
+            </div>
+
+            <div class="card-left mdl-cell mdl-cell--4-col">
+            </div>
+
+            <div class="card-right mdl-cell mdl-cell--7-col text-center">
+
+              <div class="card-right-content">
+
+                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+
+                  <div class="mdl-tabs__tab-bar ">
+                      <a href="#signUp-panel-main" class="mdl-tabs__tab is-active">Sign Up</a>
+                      <a href="#signIn-panel-main" class="mdl-tabs__tab ">Sign In</a>
+                  </div>
+
+                  <div class="mdl-tabs__panel is-active" id="signUp-panel-main">
+
+                    <form class="text-center">
+
+                      <div class="form-group">
+                        <input type="name" placeholder="First Name" class="form-control" id="first_name">
+                      </div>
+
+                      <div class="form-group">
+                        <input type="name" placeholder="Last Name" class="form-control" id="last_name">
+                      </div>
+
+                      <div class="form-group">
+                        <input type="email" placeholder="Email address" class="form-control" id="email">
+                      </div>
+
+                      <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control" id="pwd">
+                      </div>
+
+                      <div class="form-group">
+                        <input type="password" placeholder="Re-enter Password" class="form-control" id="pwd">
+                      </div>
+
+                      <button type="submit" class="mdl-button">Sign Up</button>
+
+                    </form>
+
+                  </div>
+
+                  <div class="mdl-tabs__panel" id="signIn-panel-main">
+
+                    <form class="text-center">
+
+                      <div class="form-group">
+                        <input type="email" placeholder="Email address" class="form-control" id="email">
+                      </div>
+
+                      <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-boxes" id="pwd">
+                      </div>
+
+                      <div class="row form-group">
+
+                      </div>
+
+                      <button type="submit" class="mdl-button">Sign In</button>
+
+                    </form>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div id="alt-sso">
+                  <!--  <div class="g-signin2"></div>
+                <button id="signOut" onClick="signOut();" class="mdl-button">Sign Out</button> -->
+              </div>
+
+            </div>
+
+        </div>
+
+        <div class="mdl-cell mdl-cell--2-col mdl-layout-spacer"></div>
+
+      </div>
+    </div>
+    </div>
+  </body>
+
+</html>
